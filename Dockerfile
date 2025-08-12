@@ -1,5 +1,4 @@
-# Stage 1: Build the app using Maven official image
-FROM maven:3.9.3-eclipse-temurin-17 AS build
+FROM maven:3.9.3-jdk-21 AS build
 
 WORKDIR /app
 
@@ -8,8 +7,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run the app with a lightweight Java runtime
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
