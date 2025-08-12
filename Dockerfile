@@ -7,7 +7,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temurin:21-jre-alpine
+FROM maven:3.9.3-temurin-21 AS build
 
 WORKDIR /app
 
