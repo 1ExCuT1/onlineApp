@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <h1 class="mt-5 text-center">Online App</h1>
-    <form action="/" method="post" class="row mt-3">
+    <form action="/todoapp" method="post" class="row mt-3">
         <div class="col-md-10">
         <input class="form-control form-control-lg" type="text" name="title" placeholder="Add a new task..." required>
         </div>
@@ -29,18 +29,18 @@
 
             <span th:classappend="${task.completed} ? 'text-strikethrough'" th:text="${task.title}">Task Title</span>
                 <div>
-                    <a th:href="@{/{id}/toggle(id=${task.id})}" class="btn btn-outline-secondary btn-sm">Finished</a>
-                    <a th:href="@{/{id}/delete(id=${task.id})}" class="btn btn-outline-danger btn-sm ml-2">Delete</a>
+                    <a th:href="@{/todoapp/{id}/toggle(id=${task.id})}" class="btn btn-outline-secondary btn-sm">Finished</a>
+                    <a th:href="@{/todoapp/{id}/delete(id=${task.id})}" class="btn btn-outline-danger btn-sm ml-2">Delete</a>
                 </div>
             </div>
         </div>
     </th:block>
     </div>
 </div>
-<div class="col-md-10">
-    <a>
-    <button onclick="window.location.href='/ '" type="submit" class="btn btn-primary btn-lg btn-block">New Button</button>
-    </a>
+<div class="d-flex justify-content-center mt-4">
+    <button onclick="window.location.href='/'" type="button" class="btn btn-primary btn-lg">
+        Go back
+    </button>
 </div>
 </body>
 </html>
