@@ -1,7 +1,7 @@
 package com.app.onlineApp.services;
 
 import com.app.onlineApp.models.Task;
-import com.app.onlineApp.repository.TaskRepository;
+import com.app.onlineApp.repositories.TaskRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
