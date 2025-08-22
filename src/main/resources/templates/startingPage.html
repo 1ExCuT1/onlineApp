@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onlineApp</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: linear-gradient( to right
+            , #5f43b2 30%,#3a3153 );
+        }
+        #div1{
+            margin: auto;
+            max-width: 230px;
+            max-height: 20px;
+            padding: 100px;
+            height: 3px;
+            position: relative;
+            padding-top: 300px;
+            animation-name: wordsApear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-duration: 3s;
+        }
+        #div2{
+            margin: auto;
+            max-width: 250px;
+            padding: 10px;
+            height: 32px;
+            position: relative;
+            padding-top: 10px;
+            top: 0px;
+            animation-name: buttonsApear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-duration: 3s;
+        }
+
+        h1{
+            font-family: "Courier New";
+            color: #b1aebb;
+            text-align: center;
+            text-shadow: 2px 2px black;
+        }
+        h3{
+            font-family: "Courier New";
+            color: #b1aebb;
+            text-align: center;
+            text-shadow: 2px 2px black;
+
+
+        }
+        #button1{
+            margin-right: 20px;
+            background-color: #b1aebb;
+            border: none;
+            color: white;
+            text-align: center;
+            padding: 15px 32px;
+            border-radius: 14px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            opacity:0.7;
+
+            top:0;
+            transition-duration: 0.3s;
+        }
+        button:hover{
+            opacity: 1;
+        }
+        #button2{
+            background-color: #b1aebb;
+            border: none;
+            color: white;
+            text-align: center;
+            padding: 15px 32px;
+            border-radius: 14px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            opacity:0.7;
+
+            top:0;
+            transition-duration: 0.3s;
+        }
+        #button2:hover{
+            opacity: 1;
+        }
+        #button1:hover{
+            opacity: 1;
+        }
+        @keyframes buttonsApear{
+            0%{opacity: 0; top: 500px;}
+            35%{opacity: 0;}
+            100%{ opacity: 1; top: 0px;}
+        }
+        @keyframes wordsApear{
+            0%{opacity: 0; top: -200px;}
+            35%{opacity: 0;}
+            100%{opacity: 1; top: 0px;}
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="div1">
+    <h1>Hi there!</h1>
+    <h3>who are you?</h3>
+</div>
+<div id="div2">
+    <button id="button1" onclick="window.location.href='/homePage'">stranger</button>
+    <button id="button2" onclick="window.location.href='/portfolio'">recruiter</button>
+</div>
+
+
+<p></p>
+
+</body>
+</html>
