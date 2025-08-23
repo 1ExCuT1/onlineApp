@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: linear-gradient(to bottom, #3a3153 40%, #5f43b2);
+        }
+        main {
+            padding: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #b1aebb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+            color: #3a3153;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: #3a3153;
+        }
+        #div1{
+            margin: auto;
+            max-width: 700px;
+            padding: 10px;
+            height: 32px;
+            position: relative;
+            padding-top: 40px;
+            top: 0px;
+            animation-name: buttonsApear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-duration: 3s;
+
+        }
+        #button1 {
+            background: #3a3153;
+            margin-right: 20px;
+            margin-left: 30px;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            animation-name: buttonsApear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-duration: 3s;
+        }
+        #button2 {
+            background: #3a3153;
+            margin-right: 20px;
+            margin-left: 30px;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            animation-name: buttonsApear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-duration: 3s;
+        }
+        #button3 {
+            background: #3a3153;
+            margin-right: 20px;
+            margin-left: 30px;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            animation-name: buttonsApear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-duration: 3s;
+        }
+
+        button:hover {
+            background: #3b40a4;
+        }
+
+
+
+        button{
+            margin-right: 20px;
+            margin-left: 30px;
+            background-color: #3a3153;
+            border: none;
+            color: white;
+            text-align: center;
+            padding: 15px 32px;
+            border-radius: 14px;
+            transition-duration: 0.5s;
+
+        }
+        button:hover{
+            background-color: #b1aebb;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <button  onclick="window.location.href='/aboutMePage'">About me</button>
+    <button  onclick="window.location.href='/projectsPage'">Projects</button>
+    <button  onclick="window.location.href='/learningPage'">Learning</button>
+    <button  onclick="window.location.href='/contactPage'">Contact</button>
+</div>
+<main>
+    <section class="projects">
+        <article class="project-card">
+            <h2>Todo App</h2>
+            <p>A simple to-do list application.</p>
+            <button id="button1" onclick="window.location.href='/todoapp'">View Project</button>
+        </article>
+
+        <article class="project-card">
+            <h2>Chat App</h2>
+            <p>A simple online chat application.</p>
+            <button id="button2" onclick="window.location.href='/chat'">View Project</button>
+        </article>
+
+        <article class="project-card">
+            <h2>Coming soon...</h2>
+            <p>Yet to be described...</p>
+            <button id="button3" onclick="window.location.href='/project'">View Project</button>
+        </article>
+    </section>
+</main>
+</body>
+</html>

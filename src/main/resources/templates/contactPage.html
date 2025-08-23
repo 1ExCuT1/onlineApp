@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onlineApp</title>
+    <script src="https://kit.fontawesome.com/f734b9a6f0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: linear-gradient( to bottom
+        ,#3a3153 40%,#5f43b2 );
+    }
+    #div1{
+        margin: auto;
+        max-width: 700px;
+        padding: 10px;
+        height: 32px;
+        position: relative;
+        padding-top: 40px;
+        top: 0px;
+        animation-name: buttonsApear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-duration: 3s;
+
+    }
+    #div2{
+        text-align: center;
+        margin: auto;
+        max-width: 600px;
+        height: 80px;
+        position: relative;
+        padding-top: 5px;
+        padding-right: 20px;
+        top: 50px;
+    }
+    button{
+        margin-right: 20px;
+        margin-left: 30px;
+        background-color: #3a3153;
+        border: none;
+        color: white;
+        text-align: center;
+        padding: 15px 32px;
+        border-radius: 14px;
+        transition-duration: 0.5s;
+
+    }
+    button:hover{
+        background-color: #b1aebb;
+    }
+    h1{
+        font-family: "Courier New";
+        color: #b1aebb;
+        padding-left: 10px;
+
+    }
+    h3{
+        font-family: "Courier New";
+        color: #b1aebb;
+        padding-left: 10px;
+        border-left: 4px solid #b1aebb;
+    }
+    .fa-envelope{
+        color: #b1aebb;
+    }
+    .fa-github{
+        color: #b1aebb;
+    }
+    .fa-shield-cat{
+        color: #b1aebb;
+    }
+</style>
+</head>
+<body>
+<div id="div1">
+    <button onclick="window.location.href='/aboutMePage'">About me</button>
+    <button onclick="window.location.href='/projectsPage'">Projects</button>
+    <button onclick="window.location.href='/learningPage'">Learning</button>
+    <button onclick="window.location.href='/contactPage'">Contact</button>
+</div>
+<div id="div2">
+    <h1>Contact me</h1>
+    <a href="mailto:olexiko@gmail.com?">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+    </a>
+    <a href="https://github.com/OlekYan">
+        <i class="fa-solid fa-shield-cat fa-2x"></i>
+    </a>
+    </div>
+</body>
+</html>

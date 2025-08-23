@@ -1,7 +1,6 @@
-package com.app.onlineApp.controllers;
+package com.app.onlineApp.controllers.OnlineStoreApplication;
 
 import com.app.onlineApp.models.Category;
-import com.app.onlineApp.repositories.CategoryRepository;
 import com.app.onlineApp.services.CategoryService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

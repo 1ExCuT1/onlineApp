@@ -1,4 +1,4 @@
-package com.app.onlineApp.controllers;
+package com.app.onlineApp.controllers.ChatApplication;
 
 
 import com.app.onlineApp.models.ChatMessage;

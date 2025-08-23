@@ -1,4 +1,4 @@
-package com.app.onlineApp.controllers;
+package com.app.onlineApp.controllers.OnlineStoreApplication;
 
 import com.app.onlineApp.models.Product;
 import com.app.onlineApp.services.ProductService;

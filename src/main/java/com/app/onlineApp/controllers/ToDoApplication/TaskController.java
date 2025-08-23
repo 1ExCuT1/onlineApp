@@ -1,4 +1,4 @@
-package com.app.onlineApp.controllers;
+package com.app.onlineApp.controllers.ToDoApplication;
 
 
 import org.springframework.ui.Model;

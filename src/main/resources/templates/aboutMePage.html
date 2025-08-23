@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onlineApp</title>
+</head>
+<style>
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: linear-gradient( to bottom
+        ,#3a3153 40%,#5f43b2 );
+    }
+    #div1{
+        margin: auto;
+        max-width: 700px;
+        height: 32px;
+        position: relative;
+        padding-top: 40px;
+        animation-name: buttonsApear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-duration: 3s;
+
+    }
+    #div2{
+        margin: auto;
+        max-width: 700px;
+        height: 700px;
+        position: relative;
+        padding-top: 5px;
+        padding-left: 10px;
+        top: 50px;
+
+
+
+    }
+    button{
+        margin-right: 20px;
+        margin-left: 30px;
+        background-color: #3a3153;
+        border: none;
+        color: white;
+        text-align: center;
+        padding: 15px 32px;
+        border-radius: 14px;
+        transition-duration: 0.5s;
+
+    }
+    button:hover{
+        background-color: #b1aebb;
+    }
+    h1{
+        font-family: "Courier New";
+        color: #b1aebb;
+        padding-left: 10px;
+        border-left: 8px solid #b1aebb;
+    }
+    h3{
+        font-family: "Courier New";
+        color: #b1aebb;
+        padding-left: 10px;
+        border-left: 4px solid #b1aebb;
+    }
+</style>
+</head>
+<body>
+<div id="div1">
+    <button onclick="window.location.href='/aboutMePage'">About me</button>
+    <button onclick="window.location.href='/projectsPage'">Projects</button>
+    <button onclick="window.location.href='/learningPage'">Learning</button>
+    <button onclick="window.location.href='/contactPage'">Contact</button>
+</div>
+<div id="div2">
+    <h1>Introduction</h1>
+    <h3>
+        Hi, I’m Olek, and this is my website. It’s my first large project, so if something is still missing, just remember—it’s a work in progress.
+    </h3>
+
+    <h1>Have a suggestion?</h1>
+    <h3>
+        You might ask, what’s the point of this? My simple answer: experience and practice. You don’t have to use this site or its features if they don’t meet your standards or suit you well. But if you have any feedback to share, feel free to contact me through the Contact section.
+    </h3>
+    <h1>More info</h1>
+    <h3>
+        A little bit about myself: I’m a Computer Science major at the Polish-Japanese Academy of Information Technology*, and I have a passion for creating things. It all started with 3D modeling for fun. Later, my friend and I decided to make our own game, and I was in charge of all the in-game models and environments. Unfortunately, it didn’t age well—mostly due to lack of time and other priorities at the time—but it was still a valuable experience for me.
+        Later, I tried creating my first game on my own. After working through several projects on Udemy and other learning platforms, I fell into the bottomless pit of “tutorial hell.” Luckily, I managed to escape by enrolling in college and focusing on programming itself.
+        In short, I’m a passionate web developer aiming to become a senior developer one day. With each passing month, this project will grow alongside my skills and knowledge. So if you’re here—enjoy the ride!
+    </h3>
+</div>
+</body>
+</html>
