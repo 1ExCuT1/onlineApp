@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the packaged jar file into the container
 # Replace 'your-app.jar' with the actual name of your jar file
-COPY target/*.jar onlineApp.jar
+COPY target/onlineApp-0.0.1-SNAPSHOT.jar onlineApp.jar
 
 # Expose the port your Spring Boot app runs on (default is 8080)
 EXPOSE 8080
