@@ -8,7 +8,6 @@ import jakarta.persistence.Id;
 
 
 @Entity
-
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,15 +18,12 @@ public class Task {
     public String getTitle() {
         return title;
     }
-
     public Long getId() {
         return id;
     }
-
     public boolean isCompleted() {
         return isCompleted;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
