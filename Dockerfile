@@ -6,10 +6,10 @@ WORKDIR /app
 
 # Copy the packaged jar file into the container
 # Replace 'your-app.jar' with the actual name of your jar file
-COPY target/*.jar app.jar
+COPY target/*.jar onlineApp.jar
 
 # Expose the port your Spring Boot app runs on (default is 8080)
 EXPOSE 8080
 
 # Run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "onlineApp.jar"]
