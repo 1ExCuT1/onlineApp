@@ -2,7 +2,7 @@
 FROM maven:3.9-eclipse-temurin-17-alpine AS build
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /onlineApp
 
 # Copy Maven files and download dependencies first (for caching)
 COPY pom.xml .
