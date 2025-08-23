@@ -1,4 +1,18 @@
 # Use a minimal Java 17 runtime base image
+FROM maven:3.9-eclipse-temurin-17-alpine AS build
+
+# Set the working directory
+WORKDIR /app
+
+# Copy Maven files and download dependencies first (for caching)
+COPY pom.xml .
+COPY mvnw .
+COPY .mvn .mvn
+RUN ./mvnw dependency:go-offline
+
+# Copy the entire project and build it
+COPY . .
+RUN ./mvnw clean package -DskipTests
 FROM eclipse-temurin:17-jdk-alpine
 
 # Set a working directory inside the container
